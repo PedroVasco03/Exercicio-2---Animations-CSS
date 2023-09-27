@@ -1,0 +1,47 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.container{
+    position: relative;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    border-radius: 50%;
+    justify-content: space-between;
+}
+
+.content{
+    
+    width: 40vw;
+    height: 100vh;
+    animation-name: vaiEsquerda;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    border-radius: 0;
+    align-items: center;
+    background-color: blue;
+}
+
+.content2{
+    
+    width: 40vw;
+    height: 100vh;
+    animation-name: vaiDireita;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    border-radius: 0;
+    align-items: center;
+    background-color: red;
+}
+
+@keyframes vaiEsquerda{
+    from{margin-left: 0px;}
+    to{margin-left: 700px;}
+}
+
+@keyframes vaiDireita{
+    from{margin-right: 0px;}
+    to{margin-right: 700px; }
+}
